@@ -1,0 +1,146 @@
+/* ... existing styles ... */
+
+  /* ... existing styles ... */
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px); /* Add this line */
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center; /* Center horizontally */
+    align-content: center; /* Center vertically */
+  }
+  
+  /* ... rest of the styles ... */
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ... existing styles ... */
+
+.container {
+    text-align: center;
+    background-color: #822222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: #007bff;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+  }
+  
+  .cell.X {
+    background-color: #007bff;
+  }
+  
+  .cell.O {
+    background-color: #3f51b5;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .status.X {
+    color: #007bff;
+  }
+  
+  .status.O {
+    color: #3f51b5;
+  }
+  
+  .restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes winnerAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .winner {
+    animation: winnerAnimation 1s ease-in-out;
+  }
+
+
+  
+  
